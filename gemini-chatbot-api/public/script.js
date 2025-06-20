@@ -14,7 +14,7 @@ form.addEventListener('submit', async function (e) {
     appendMessage('bot', 'Gemini is thinking...');
 
     try {
-        const response = await fetch('http://localhost:3000/api/chat', {
+        const response = await fetch('/api/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
